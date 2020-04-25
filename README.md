@@ -3,16 +3,16 @@
 
   # install required packages:
 
-      pip install -r requirements.txt
+      pip3 install -r requirements.txt
 
   # make migrations for DB:
 
-      python manage.py makemigrations
+      python3.6 manage.py makemigrations
 
   # apply the migrations:
 
-      python manage.py migrate
+      python3.6 manage.py migrate
 
   # start the server:
 
-      python manage.py runserver 0.0.0.0:8000
+      python3.6 manage.py runserver 0.0.0.0:8000
