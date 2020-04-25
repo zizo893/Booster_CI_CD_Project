@@ -10,13 +10,13 @@ Create CI/CD pipeline using jenkinsfile to deploy simple django web app as a mic
 
 3- write jenkinsfile using scripting syntax with the following four stages
 
-preparation: checkout the code
+- preparation: checkout the code
 
-build image: build image using the dockerfile
+- build image: build image using the dockerfile
 
-push image: push the built image to docker registry(docker hub)
+- push image: push the built image to docker registry(docker hub)
 
-deploy: deploy a container from the pushed image
+- deploy: deploy a container from the pushed image
 
 
 4- configure job in jenkins using pipeline type with the forked git repo url
