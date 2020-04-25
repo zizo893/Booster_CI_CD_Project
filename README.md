@@ -1,18 +1,18 @@
 # Steps Of Deployment
 
 
-  #install required packages:
+  # install required packages:
 
       pip install -r requirements.txt
 
-  #make migrations for DB:
+  # make migrations for DB:
 
       python manage.py makemigrations
 
-  #apply the migrations:
+  # apply the migrations:
 
       python manage.py migrate
 
-  #start the server:
+  # start the server:
 
       python manage.py runserver 0.0.0.0:8000
