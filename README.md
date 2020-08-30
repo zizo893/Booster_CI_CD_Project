@@ -8,7 +8,13 @@ Create CI/CD pipeline using jenkinsfile to deploy simple django web app as a mic
 
 2- write dockerfile inside the forked repo to create new image from base image ubuntu and install python3.6 and pip3 and copy the source code files of the app to this image and configure it to start the server when creating container (check the below section for steps to start the django server) 
 
-3- write jenkinsfile using scripting syntax with the following four stages
+3- configure ubuntu slave to use it for the pipeline
+
+4- create slck workspace and integrate it with jenkins
+
+5- install any plugin from your choice to create statistics about builds
+
+6- write jenkinsfile with the following four stages for both dev and master branch
 
 - preparation: checkout the code
 
@@ -18,8 +24,12 @@ Create CI/CD pipeline using jenkinsfile to deploy simple django web app as a mic
 
 - deploy: deploy a container from the pushed image
 
+- notification: send slack message with the build status
 
-4- configure job in jenkins using pipeline type with the forked git repo url
+
+7- configure job in jenkins using multibranch pipeline type with the forked git repo url
+
+
 
 
 
